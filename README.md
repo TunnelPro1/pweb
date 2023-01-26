@@ -5,7 +5,7 @@
 
 
 ```
-apt install wget -y; bash <(wget -qO- https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/ubuinst.sh)
+apt install wget -y; bash <(wget -qO- https://github.com/TunnelPro1/pweb/raw/main/install/ubuinst.sh)
 ```
 </br>
 
@@ -16,7 +16,7 @@ apt install wget -y; bash <(wget -qO- https://github.com/lucianolima2905/Pweb-So
 
 # 𓊈𒆜 SINCRONIZAR NA VPS SSH! 𒆜𓊉
 ```
-apt install wget -y; bash <(wget -qO- https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/sincpainel.sh)
+apt install wget -y; bash <(wget -qO- https://github.com/TunnelPro1/pweb/raw/main/install/sincpainel.sh)
 ```
 
 
@@ -82,5 +82,4 @@ apt install wget -y; bash <(wget -qO- https://github.com/lucianolima2905/Pweb-So
 @Davidsdy
 @sonycssh
 
-# 𓊈𒆜 GRUPO SONYC SSH: 𒆜𓊉
-👉 https://t.me/sonycsshgp
+obs: não é meu apenas copiei, kakashi faz isso e ninguem odeia ele kkkk

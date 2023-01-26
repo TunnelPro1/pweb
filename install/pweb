@@ -109,13 +109,13 @@ fun_atpweb () {
 [[ ! -d /bin/ppweb ]] && mkdir /bin/ppweb
 cd /bin/ppweb || exit
 rm *.sh verpweb > /dev/null 2>&1
-wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/verifatt.sh > /dev/null 2>&1
-wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/verpweb > /dev/null 2>&1
-wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/whatsapp.sh > /dev/null 2>&1
+wget https://github.com/TunnelPro1/pweb/raw/main/install/verifatt.sh > /dev/null 2>&1
+wget https://github.com/TunnelPro1/pweb/raw/main/install/verpweb > /dev/null 2>&1
+wget https://github.com/TunnelPro1/pweb/raw/main/install/whatsapp.sh > /dev/null 2>&1
 chmod 777 *.sh > /dev/null 2>&1
 cd /bin || exit
 rm pweb > /dev/null 2>&1
-wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/pweb > /dev/null 2>&1
+wget https://github.com/TunnelPro1/pweb/raw/main/install/pweb > /dev/null 2>&1
 chmod 777 pweb > /dev/null 2>&1
 cd || exit 
 cat /dev/null > ~/.bash_history && history -c
@@ -223,7 +223,7 @@ painel_att () {
 clear
 cd /bin/ppweb || exit
 rm verweb > /dev/null 2>&1
-wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/verweb > /dev/null 2>&1
+wget https://github.com/TunnelPro1/pweb/raw/main/install/verweb > /dev/null 2>&1
 cd || exit
 echo ""
 echo -e "           \033[1;33m● \033[1;32mATUALIZANDO LINUX, PODE DEMORAR \033[1;33m●\033[0m"
@@ -442,8 +442,8 @@ fun_att_api () {
   screen -r -S "bot_painel" -X quit > /dev/null 2>&1
   screen -wipe 1>/dev/null 2>/dev/null
 	sleep 2
-    wget -qO- https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/apibot -O /bin/ppweb/apibot > /dev/null 2>&1
-    wget -qO- https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/bot -O /bin/ppweb/bot > /dev/null 2>&1
+    wget -qO- https://github.com/TunnelPro1/pweb/raw/main/install/apibot -O /bin/ppweb/apibot > /dev/null 2>&1
+    wget -qO- https://github.com/TunnelPro1/pweb/raw/main/install/bot -O /bin/ppweb/bot > /dev/null 2>&1
 	chmod 777 -R /bin/ppweb > /dev/null 2>&1
   cd $HOME || exit
   echo ""
@@ -496,10 +496,10 @@ pararBot(){
 executarBot(){
   clear
 banner
-  chave=$(curl -sSL "https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/chave") &>/dev/null
+  chave=$(curl -sSL "https://github.com/TunnelPro1/pweb/raw/main/install/chave") &>/dev/null
   key=$(cat /bin/ppweb/botpag/chave_inst) &>/dev/null
     
-         if [[ "$key" = "$chave" ]]
+         if [[ "$key" = "tunnelpro" ]]
           then
               echo "[-] ATIVANDO BOTPAG"
               sleep 3
@@ -527,14 +527,14 @@ banner
 verificar_chave(){
 clear
 banner
-chave=$(curl -sSL "https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/chave") &>/dev/null
+chave=$(curl -sSL "https://github.com/TunnelPro1/pweb/raw/main/install/chave") &>/dev/null
   
   if [[ ! -f /bin/ppweb/botpag/chave_inst ]]
   then
 
 read -p "DIGITE A CHAVE DE INSTALAÇÃO: " key
     
-         if [[ "$key" = "$chave" ]]
+         if [[ "$key" = "tunnelpro" ]]
           then
                echo -e "[*] VALIDANDO A CHAVE DE INSTALAÇÃO"
                 sleep 3
@@ -554,7 +554,7 @@ read -p "DIGITE A CHAVE DE INSTALAÇÃO: " key
 
     key=$(cat /bin/ppweb/botpag/chave_inst) &>/dev/null
     
-         if [[ "$key" = "$chave" ]]
+         if [[ "$key" = "tunnelpro" ]]
           then
           botpag
           else
@@ -570,7 +570,7 @@ prepararAmbiente(){
 
 rm /bin/ppweb/botpag/* &>/dev/null
 	
-wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/botpag.zip &>/dev/null
+wget https://github.com/TunnelPro1/pweb/raw/main/install/botpag.zip &>/dev/null
 
 unzip botpag.zip &>/dev/null
 
@@ -724,8 +724,8 @@ fun_botOnOff() {
         echo -e "\033[1;32mATIVANDO BOT PWEB \033[0m\n"
         fun_bot1() {
             [[ ! -e "/bin/ppweb/bot" ]] && {
-				wget -qO- https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/apibot -O /bin/ppweb/apibot > /dev/null 2>&1
-                wget -qO- https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/bot -O /bin/ppweb/bot > /dev/null 2>&1
+				wget -qO- https://github.com/TunnelPro1/pweb/raw/main/install/apibot -O /bin/ppweb/apibot > /dev/null 2>&1
+                wget -qO- https://github.com/TunnelPro1/pweb/raw/main/install/bot -O /bin/ppweb/bot > /dev/null 2>&1
 				chmod 777 -R /bin/ppweb > /dev/null 2>&1
 			}
           cd /bin/ppweb

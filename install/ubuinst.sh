@@ -138,7 +138,7 @@ cat /dev/null > ~/.bash_history && history -c
 rm /bin/ubuinst* > /dev/null 2>&1
 exit;
 else
-  echo -e 'Modificado por: @sonycssh' >/usr/lib/telegram
+  echo -e 'Modificado por: @tunnelpro' >/usr/lib/telegram
   msg -bar
   echo -e "\e[1;97m           \e[5m\033[1;100m   ATUALIZAÇÃO DO SISTEMA   \033[1;37m"
   msg -bar
@@ -192,7 +192,7 @@ function install_continue {
 function install_continue2 {
 cd /bin || exit
 rm pweb > /dev/null 2>&1
-wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/pweb > /dev/null 2>&1
+wget https://github.com/TunnelPro1/pweb/raw/main/install/pweb > /dev/null 2>&1
 chmod 777 pweb > /dev/null 2>&1
 clear
 [[ ! -d /bin/ppweb ]] && mkdir /bin/ppweb

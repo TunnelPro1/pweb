@@ -1,5 +1,5 @@
 #!/bin/bash
-[[ $(awk -F" " '{print $2}' /usr/lib/telegram) == "@sonycssh" ]] && {
+[[ $(awk -F" " '{print $2}' /usr/lib/telegram) == "@balieiro1" ]] && {
 ### CORES DA BARRA
 
  (
@@ -181,7 +181,7 @@ fun_tst () {
     if [ -e "/usr/bin/testevelocidade" ]; then
     testevelocidade --share > speed
     else
-    wget https://github.com/lucianolima2905/Pweb-Sonyc_Plus/raw/main/install/speedtest-cli -O testevelocidade
+    wget https://github.com/TunnelPro1/pweb/raw/main/install/speedtest-cli -O testevelocidade
     chmod +x testevelocidade
     mv testevelocidade /usr/bin/testevelocidade
     testevelocidade --share > speed
@@ -610,7 +610,7 @@ _________________________________________________
              jjl7u|__] |  |  |  |__| |__| | _ 
              |__] |__|  |  |    |  | |__| 
 _________________________________________________
-                                  Modificado por @sonycssh
+                                  COPIADO por TunnelPro
 
 FECHA
 
